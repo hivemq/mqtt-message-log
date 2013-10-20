@@ -5,7 +5,7 @@
 
     <groupId>com.dcsquare.hivemq.plugin</groupId>
     <artifactId>mqtt-message-log</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
 
     <description>HiveMQ Hello World Plugin - a reference for all plugin developer</description>
 

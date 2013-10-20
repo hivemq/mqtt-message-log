@@ -28,7 +28,7 @@ import static com.dcsquare.hivemq.spi.config.Configurations.noConfigurationNeede
 /**
  * @author Dominik Obermaier
  */
-@Information(name = "HiveMQ MQTT Message Log Plugin", author = "dc-square GmbH", version = "1.0")
+@Information(name = "HiveMQ MQTT Message Log Plugin", author = "dc-square GmbH", version = "1.0.0")
 public class MqttMessageLogPluginModule extends HiveMQPluginModule {
 
 
