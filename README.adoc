@@ -1,0 +1,26 @@
+:hivemq-plugin-docs-link: http://www.hivemq.com/docs/plugins/1.4.0/
+:access-log-download-website: http://www.hivemq.com/plugin/mqtt-accesslog/
+:hivemq-blog-tools: http://www.hivemq.com/overview-of-mqtt-client-tools/
+
+= MQTT Message Log Plugin
+
+== Description
+
+The MQTT Message Log is a very useful HiveMQ Plugin for debugging and development purposes. It provides the possibility to follow up on any clients communicating with the broker on the terminal.
+
+*The plugin logs the following events:*
+
+* A client connects to HiveMQ
+* A client sends a publish message
+* A client subscribes to a topic
+* A client unsubscribes from a topic
+* A client disconnects from HiveMQ
+
+
+== How to use the plugin
+
+. Copy the jar file to your +<HIVEMQ_HOME>/plugins+ folder
+. Run HiveMQ
+. Connect with a {hivemq-blog-tools}[MQTT client] of your choice and publish something.
+. You should see logged events in your terminal where you started HiveMQ
+
