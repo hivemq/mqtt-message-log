@@ -14,18 +14,18 @@
  *   limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin.mqttmessage.callbacks;
+package com.hivemq.plugin.mqttmessage.callbacks;
 
-import com.dcsquare.hivemq.spi.callback.events.OnUnsubscribeCallback;
-import com.dcsquare.hivemq.spi.message.UNSUBSCRIBE;
-import com.dcsquare.hivemq.spi.security.ClientData;
+import com.hivemq.spi.callback.events.OnUnsubscribeCallback;
+import com.hivemq.spi.message.UNSUBSCRIBE;
+import com.hivemq.spi.security.ClientData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
 /**
- * @author Dominik Obermaier
+ * @author Florian Limpöck
  */
 public class UnsubscribeReceived implements OnUnsubscribeCallback {
 

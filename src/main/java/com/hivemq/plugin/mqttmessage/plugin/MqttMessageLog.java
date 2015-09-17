@@ -14,10 +14,10 @@
  *   limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin.mqttmessage.plugin;
+package com.hivemq.plugin.mqttmessage.plugin;
 
-import com.dcsquare.hivemq.plugin.mqttmessage.callbacks.*;
-import com.dcsquare.hivemq.spi.PluginEntryPoint;
+import com.hivemq.spi.PluginEntryPoint;
+import com.hivemq.plugin.mqttmessage.callbacks.*;
 
 import javax.annotation.PostConstruct;
 

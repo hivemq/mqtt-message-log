@@ -14,21 +14,21 @@
  *   limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin.mqttmessage.callbacks;
+package com.hivemq.plugin.mqttmessage.callbacks;
 
-import com.dcsquare.hivemq.spi.callback.CallbackPriority;
-import com.dcsquare.hivemq.spi.callback.events.OnSubscribeCallback;
-import com.dcsquare.hivemq.spi.callback.exception.InvalidSubscriptionException;
-import com.dcsquare.hivemq.spi.message.SUBSCRIBE;
-import com.dcsquare.hivemq.spi.message.Topic;
-import com.dcsquare.hivemq.spi.security.ClientData;
+import com.hivemq.spi.callback.CallbackPriority;
+import com.hivemq.spi.callback.events.OnSubscribeCallback;
+import com.hivemq.spi.callback.exception.InvalidSubscriptionException;
+import com.hivemq.spi.message.SUBSCRIBE;
+import com.hivemq.spi.message.Topic;
+import com.hivemq.spi.security.ClientData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
 /**
- * @author Dominik Obermaier
+ * @author Florian Limpöck
  */
 public class SubscribeReceived implements OnSubscribeCallback {
 

@@ -14,10 +14,10 @@
  *   limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin.mqttmessage.callbacks;
+package com.hivemq.plugin.mqttmessage.callbacks;
 
-import com.dcsquare.hivemq.spi.callback.events.OnDisconnectCallback;
-import com.dcsquare.hivemq.spi.security.ClientData;
+import com.hivemq.spi.callback.events.OnDisconnectCallback;
+import com.hivemq.spi.security.ClientData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
