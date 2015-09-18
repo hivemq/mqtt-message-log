@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 dc-square GmbH
+ * Copyright 2015 dc-square GmbH
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -21,7 +21,9 @@ import com.hivemq.spi.security.ClientData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * @author Florian Limpöck
+ */
 public class ClientDisconnect implements OnDisconnectCallback {
 
     private static final Logger log = LoggerFactory.getLogger(ClientDisconnect.class);
