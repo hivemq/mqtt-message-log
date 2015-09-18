@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 dc-square GmbH
+ * Copyright 2015 dc-square GmbH
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -14,29 +14,17 @@
  *   limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin.mqttmessage.plugin;
+package com.hivemq.plugin.mqttmessage.plugin;
 
-import com.dcsquare.hivemq.spi.HiveMQPluginModule;
-import com.dcsquare.hivemq.spi.PluginEntryPoint;
-import com.dcsquare.hivemq.spi.plugin.meta.Information;
-import com.google.inject.Provider;
-import org.apache.commons.configuration.AbstractConfiguration;
-
-import static com.dcsquare.hivemq.spi.config.Configurations.noConfigurationNeeded;
-
+import com.hivemq.spi.HiveMQPluginModule;
+import com.hivemq.spi.PluginEntryPoint;
+import com.hivemq.spi.plugin.meta.Information;
 
 /**
- * @author Dominik Obermaier
+ * @author Florian Limpöck
  */
 @Information(name = "HiveMQ MQTT Message Log Plugin", author = "dc-square GmbH", version = "1.0.0")
 public class MqttMessageLogPluginModule extends HiveMQPluginModule {
-
-
-    @Override
-    public Provider<Iterable<? extends AbstractConfiguration>> getConfigurations() {
-        return noConfigurationNeeded();
-    }
-
 
     @Override
     protected void configurePlugin() {

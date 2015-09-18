@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 dc-square GmbH
+ * Copyright 2015 dc-square GmbH
  *
  *   Licensed under the Apache License, Version 2.0 (the "License");
  *   you may not use this file except in compliance with the License.
@@ -14,14 +14,16 @@
  *   limitations under the License.
  */
 
-package com.dcsquare.hivemq.plugin.mqttmessage.callbacks;
+package com.hivemq.plugin.mqttmessage.callbacks;
 
-import com.dcsquare.hivemq.spi.callback.events.OnDisconnectCallback;
-import com.dcsquare.hivemq.spi.security.ClientData;
+import com.hivemq.spi.callback.events.OnDisconnectCallback;
+import com.hivemq.spi.security.ClientData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+/**
+ * @author Florian Limpöck
+ */
 public class ClientDisconnect implements OnDisconnectCallback {
 
     private static final Logger log = LoggerFactory.getLogger(ClientDisconnect.class);
