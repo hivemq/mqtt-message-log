@@ -1,5 +1,4 @@
-:hivemq-plugin-docs-link: http://www.hivemq.com/docs/plugins/1.4.0/
-:access-log-download-website: http://www.hivemq.com/plugin/mqtt-accesslog/
+:hivemq-plugin-docs-link: http://www.hivemq.com/docs/plugins/latest/
 :hivemq-blog-tools: http://www.hivemq.com/overview-of-mqtt-client-tools/
 
 = MQTT Message Log Plugin
