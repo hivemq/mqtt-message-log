@@ -5,7 +5,7 @@
 
     <groupId>com.hivemq.plugin</groupId>
     <artifactId>mqtt-message-log</artifactId>
-    <version>1.0.0</version>
+    <version>3.0.0</version>
 
     <description>HiveMQ Mqtt Message Log Plugin - A plugin to log mqtt messages</description>
 
@@ -78,6 +78,31 @@
     </build>
 
     <profiles>
+        <profile>
+            <id>Packaging</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-assembly-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>assembly</id>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>single</goal>
+                                </goals>
+                                <configuration>
+                                    <descriptors>
+                                        <descriptor>assembly.xml</descriptor>
+                                    </descriptors>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>RunWithHiveMQ</id>
             <build>
