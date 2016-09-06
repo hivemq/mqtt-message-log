@@ -5,7 +5,7 @@
 
     <groupId>com.hivemq.plugin</groupId>
     <artifactId>mqtt-message-log</artifactId>
-    <version>3.0.0</version>
+    <version>3.1.0</version>
 
     <description>HiveMQ Mqtt Message Log Plugin - A plugin to log mqtt messages</description>
 
@@ -18,13 +18,17 @@
             <name>Lukas Brandl</name>
             <organization>dc-square GmbH</organization>
         </developer>
+        <developer>
+            <name>Georg Held</name>
+            <organization>dc-square GmbH</organization>
+        </developer>
     </developers>
 
     <dependencies>
         <dependency>
             <groupId>com.hivemq</groupId>
             <artifactId>hivemq-spi</artifactId>
-            <version>3.0.0</version>
+            <version>3.1.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
