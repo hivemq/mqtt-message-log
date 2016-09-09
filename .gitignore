@@ -6,3 +6,4 @@
 /.idea/
 
 /hivemq-mqtt-message-log-plugin.iml
+mqtt-message-log.iml
