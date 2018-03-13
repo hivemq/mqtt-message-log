@@ -14,6 +14,7 @@ The MQTT Message Log is a very useful HiveMQ Plugin for debugging and developmen
 * A client subscribes to a topic
 * A client unsubscribes from a topic
 * A client disconnects from HiveMQ
+* HiveMQ send a message to a client
 
 
 == How to use the plugin
