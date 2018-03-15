@@ -23,6 +23,7 @@ import javax.annotation.PostConstruct;
 
 /**
  * @author Florian Limpöck
+ * @author Max Marche
  */
 public class MqttMessageLog extends PluginEntryPoint {
 
@@ -35,5 +36,6 @@ public class MqttMessageLog extends PluginEntryPoint {
         getCallbackRegistry().addCallback(new UnsubscribeReceived());
         getCallbackRegistry().addCallback(new ClientDisconnect());
         getCallbackRegistry().addCallback(new PublishReceived());
+        getCallbackRegistry().addCallback(new PublishSend());
     }
 }

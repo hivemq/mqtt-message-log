@@ -22,6 +22,11 @@
             <name>Georg Held</name>
             <organization>dc-square GmbH</organization>
         </developer>
+        <developer>
+            <name>Max Marche</name>
+            <organization>tarent solutions GmbH</organization>
+            <email>m.marche@tarent.de</email>
+        </developer>
     </developers>
 
     <dependencies>
