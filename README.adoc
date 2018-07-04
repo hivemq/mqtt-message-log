@@ -24,3 +24,19 @@ The MQTT Message Log is a very useful HiveMQ Plugin for debugging and developmen
 . Connect with a {hivemq-blog-tools}[MQTT client] of your choice and publish something.
 . You should see logged events in your terminal where you started HiveMQ
 
+== Configuration
+
+It is possible to opt out of specific log event types by adding a
+*mqttMessageLog.properties* files to your +<HIVEMQ_HOME>/conf+HiveMq  folder.
+
+This properties file could have the following entries:
+
+* client-connect=false|true
+* client-disconnect=false|true
+* publish-received=false|true
+* publish-send=false|true
+* subscribe-received=false|true
+* unsubscribe-received=false|true
+
+Missing entries defaults to true.
+
