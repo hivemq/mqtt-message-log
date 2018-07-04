@@ -16,10 +16,12 @@
 
 package com.hivemq.plugin.mqttmessage.plugin;
 
+import com.hivemq.plugin.mqttmessage.config.MqttMessageLogConfig;
 import com.hivemq.spi.PluginEntryPoint;
 import com.hivemq.plugin.mqttmessage.callbacks.*;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 
 /**
  * @author Florian Limpöck
@@ -27,15 +29,33 @@ import javax.annotation.PostConstruct;
  */
 public class MqttMessageLog extends PluginEntryPoint {
 
+    private final MqttMessageLogConfig config;
+
+    @Inject
+    public MqttMessageLog(MqttMessageLogConfig config) {
+        this.config = config;
+    }
 
     @PostConstruct
     public void postConstruct() {
 
-        getCallbackRegistry().addCallback(new ClientConnect());
-        getCallbackRegistry().addCallback(new SubscribeReceived());
-        getCallbackRegistry().addCallback(new UnsubscribeReceived());
-        getCallbackRegistry().addCallback(new ClientDisconnect());
-        getCallbackRegistry().addCallback(new PublishReceived());
-        getCallbackRegistry().addCallback(new PublishSend());
+        if (config.isClientConnect()) {
+            getCallbackRegistry().addCallback(new ClientConnect());
+        }
+        if (config.isSubscribeReceived()) {
+            getCallbackRegistry().addCallback(new SubscribeReceived());
+        }
+        if (config.isUnsubscribeReceived()) {
+            getCallbackRegistry().addCallback(new UnsubscribeReceived());
+        }
+        if (config.isClientDisconnect()) {
+            getCallbackRegistry().addCallback(new ClientDisconnect());
+        }
+        if (config.isPublishReceived()) {
+            getCallbackRegistry().addCallback(new PublishReceived());
+        }
+        if (config.isPublishSend()) {
+            getCallbackRegistry().addCallback(new PublishSend());
+        }
     }
 }
