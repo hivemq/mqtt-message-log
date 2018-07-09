@@ -53,7 +53,7 @@ public class MqttMessageLogConfig {
     private boolean getForKey(String key) {
         if (properties == null) {
             properties = configReader.getProperties();
-            log.info("initialize properties to: {}", properties);
+            log.info("MQTT Message Log Plugin: Properties initialized  to: {}", properties);
         }
 
         return properties.getProperty(key, TRUE).equals(TRUE);

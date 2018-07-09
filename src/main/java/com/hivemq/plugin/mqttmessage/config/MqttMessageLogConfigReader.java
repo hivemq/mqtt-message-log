@@ -30,18 +30,17 @@ public class MqttMessageLogConfigReader {
         final File configFolder = systemInformation.getConfigFolder();
         final File pluginFile = new File(configFolder, PROPERTIES_FILE_NAME);
 
-        log.info("will try to read config properties from {}", PROPERTIES_FILE_NAME);
+        log.debug("MQTT Message Log Plugin: Will try to read config properties from {}", PROPERTIES_FILE_NAME);
 
         if (!pluginFile.canRead()) {
-            log.warn("no properties file {} available", pluginFile.getAbsolutePath());
+            log.info("MQTT Message Log Plugin: No properties file {} available", pluginFile.getAbsolutePath());
             return;
         }
 
-        try {
-            InputStream is = new FileInputStream(pluginFile);
+        try (InputStream is = new FileInputStream(pluginFile)) {
             properties.load(is);
         } catch (Exception e) {
-            log.error("could not load poroperties: {}", e.getMessage());
+            log.warn("MQTT Message Log Plugin: Could not load properties, reason {}", e.getMessage());
         }
     }
 
