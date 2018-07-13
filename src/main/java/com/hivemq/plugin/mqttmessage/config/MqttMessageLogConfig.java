@@ -10,13 +10,13 @@ public class MqttMessageLogConfig {
 
     private static final Logger log = LoggerFactory.getLogger(MqttMessageLogConfig.class);
 
-    private static final String TRUE = "true";
-    private static final String CLIENT_CONNECT = "client-connect";
-    private static final String CLIENT_DISCONNECT = "client-disconnect";
-    private static final String PUBLISH_RECEIVED = "publish-received";
-    private static final String PUBLISH_SEND = "publish-send";
-    private static final String SUBSCRIBE_RECEIVED = "subscribe-received";
-    private static final String UNSUBSCRIBE_RECEIVED = "unsubscribe-received";
+    static final String TRUE = "true";
+    static final String CLIENT_CONNECT = "client-connect";
+    static final String CLIENT_DISCONNECT = "client-disconnect";
+    static final String PUBLISH_RECEIVED = "publish-received";
+    static final String PUBLISH_SEND = "publish-send";
+    static final String SUBSCRIBE_RECEIVED = "subscribe-received";
+    static final String UNSUBSCRIBE_RECEIVED = "unsubscribe-received";
 
     private final MqttMessageLogConfigReader configReader;
     private Properties properties = null;
