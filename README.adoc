@@ -40,3 +40,10 @@ This properties file could have the following entries:
 
 Missing entries defaults to true.
 
+= Contributing
+
+If you want to contribute to HiveMQ Message Log Plugin, see the link:CONTRIBUTING.md[contribution guidelines].
+
+= License
+
+HiveMQ Message Log Plugin is licensed under the `APACHE LICENSE, VERSION 2.0`. A copy of the license can be found link:LICENSE.txt[here].
